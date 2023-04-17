@@ -1,2 +1,3 @@
 # To Do App
- A standard to do app 
+
+A standard To-Do application made in React.Js VITE
