@@ -1,0 +1,8 @@
+* {
+	border: 1px orange solid;
+}
+
+.task-box {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
