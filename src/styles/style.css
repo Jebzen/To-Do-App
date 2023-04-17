@@ -1,8 +1,69 @@
-* {
-	border: 1px orange solid;
+:root {
+	--prime-color: rgb(255, 99, 71);
+	--secondary-color: teal;
+
+	--bg-dark: rgb(23, 25, 27);
 }
 
-.task-box {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+main {
+	display: flex;
+	justify-content: center;
+}
+
+main > section {
+	width: min(90%, 50rem);
+	margin-top: 5rem;
+	min-height: 750px;
+
+	background-color: var(--bg-dark);
+	border-radius: 15px;
+}
+
+.input-box {
+	display: flex;
+	justify-content: center;
+	width: fit-content;
+}
+.input-field {
+	all: unset;
+	cursor: text;
+	border: 2px solid var(--prime-color);
+	padding: 0.5rem;
+	border-radius: 10px 0px 0px 10px;
+}
+
+.input-btn {
+	all: unset;
+	cursor: pointer;
+	padding: 0.5rem 1rem;
+	background-color: var(--prime-color);
+	border: 2px solid var(--prime-color);
+	border-radius: 0px 10px 10px 0px;
+}
+
+.task-list {
+	display: flex;
+	flex-direction: column;
+}
+
+.task {
+	background-color: var(--secondary-color);
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 1rem;
+	padding: 1rem 0.75rem;
+	border-radius: 10px;
+}
+
+.task .task-txt {
+	margin-right: auto;
+	align-self: center;
+}
+
+.task .bi {
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+.task .bi:hover {
+	color: var(--prime-color);
 }

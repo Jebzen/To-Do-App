@@ -2,8 +2,37 @@
 @import "bootstrap";
 @import "bootstrap-icons";
 
+$prime-color: brown;
+$secondary-color: teal;
+
 html,
 body {
 	@extend .bg-dark, .text-light;
 	font-family: "Montserrat", "Inter", "Poppins", sans-serif;
+}
+
+.input-box:focus-within {
+	.input-btn {
+		border-color: darken($prime-color, 5%);
+		background-color: darken($prime-color, 5%);
+		&:focus-within {
+			background-color: darken($prime-color, 7.5%);
+		}
+	}
+	.input-field {
+		border-color: darken($prime-color, 5%);
+	}
+}
+
+.input-box:hover {
+	.input-btn {
+		border-color: darken($prime-color, 5%);
+		background-color: darken($prime-color, 5%);
+		&:hover {
+			background-color: darken($prime-color, 7.5%);
+		}
+	}
+	.input-field {
+		border-color: darken($prime-color, 5%);
+	}
 }

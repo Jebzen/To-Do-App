@@ -1,17 +1,19 @@
-import Row from "./Components/Row";
-
 function App() {
 	return (
-		<main className="container">
-			<h1 className="p-5 text-uppercase">To do app</h1>
-			<section className="task-box">
-				<Row
-					task={"Task 1"}
-					stage={0}
-					progress={0}
-					startDate={new Date("9 nov 2022")}
-					deadline={new Date("9 april 2023")}
-				/>
+		<main>
+			<section>
+				<h1 className="text-center p-2 mt-3">What's the agenda?</h1>
+				<form className="input-box m-3 mx-auto">
+					<input type="text" className="input-field" />
+					<button className="input-btn">Add task</button>
+				</form>
+				<section className="task-list m-3">
+					<div className="task">
+						<span className="task-txt">TEXT</span>
+						<span className="bi bi-x-circle me-2"></span>
+						<span className="bi bi-pencil-square"></span>
+					</div>
+				</section>
 			</section>
 		</main>
 	);
